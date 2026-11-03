@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Industrial Equipment Health Monitoring</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #172033;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(120deg,
+        #102b46, #17618b);
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #d8e9f5;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 95%;
+    max-width: 1450px;
+    margin: 25px auto;
+}
+
+/* PROJECT INFORMATION */
+
+.project-info {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.project-info h2 {
+    margin-top: 0;
+    color: #17466c;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+    font-size: 21px;
+    margin: 25px 0 15px;
+    color: #173c5a;
+}
+
+/* STATUS CARDS */
+
+.status-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(190px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.card .icon {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 15px;
+    color: #526477;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* THINGSBOARD DASHBOARD */
+
+.dashboard-container {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 3px 12px #00000010;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 950px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #102b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+@media(max-width:600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    iframe {
+        height: 1100px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+🏭 INDUSTRIAL EQUIPMENT HEALTH MONITORING
+</h1>
+
+<p>
+Real-Time Equipment Condition Monitoring
+Using STM32F446RE and Arduino UNO R4 WiFi
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="project-info">
+
+<h2>Project Overview</h2>
+
+<p>
+This system monitors the health condition of
+industrial equipment using multiple sensors
+interfaced with STM32F446RE.
+</p>
+
+<p>
+Sensor measurements are transmitted through
+Arduino UNO R4 WiFi to ThingsBoard Cloud for
+real-time monitoring, visualization and
+equipment condition assessment.
+</p>
+
+<p>
+<strong>Controller:</strong> STM32F446RE Nucleo
+</p>
+
+<p>
+<strong>Communication:</strong> USART1 / WiFi
+</p>
+
+<p>
+<strong>Cloud Platform:</strong> ThingsBoard
+</p>
+
+</div>
+
+<h2 class="section-title">
+📊 Live Equipment Monitoring
+</h2>
+
+<div class="dashboard-container">
+
+<!-- Replace the URL below with your
+     actual ThingsBoard public dashboard link -->
+
+<iframe
+src="https://thingsboard.cloud/dashboards/groups/be883df0-d67a-11f1-86c1-cdf15b9d0c51/1a8eaec0-d68c-11f1-86c1-cdf15b9d0c51"
+title="Industrial Equipment Live Dashboard"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+Industrial Equipment Health Monitoring System
+</p>
+
+<p>
+STM32F446RE | Arduino UNO R4 WiFi | ThingsBoard
+</p>
+
+<p>
+Real-Time Industrial IoT Monitoring
+</p>
+
+</footer>
+
+</body>
+
+</html>
